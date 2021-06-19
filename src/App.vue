@@ -1,10 +1,10 @@
 <template>
-  <wu-button></wu-button>
+  <wu-button type='disabled' round='true' size='large'></wu-button>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import WuButton from './components/button/Button.vue';
+import { defineComponent } from 'vue';
+import WuButton from './components/button/WuButton.vue';
 export default defineComponent({
   name: 'App',
   components: {

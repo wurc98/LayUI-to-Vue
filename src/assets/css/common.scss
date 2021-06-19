@@ -2,3 +2,68 @@
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+//按钮组件样式
+.wu-btn {
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid transparent;
+    padding: 0 18px;
+    background-color: $btnColor;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.wu-btn-primary {
+    border-color: #d2d2d2;
+    background: 0 0;
+    color: #666;
+}
+.wu-btn:hover {
+    opacity: 0.8;
+    color: #fff;
+}
+.wu-btn-primary:hover {
+    border-color: $btnColor;
+    color: #333;
+}
+.wu-btn-size-large {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 25px;
+    font-size: 16px;
+}
+.wu-btn-size-mini {
+    height: 22px;
+    line-height: 22px;
+    padding: 0 5px;
+    font-size: 12px;
+}
+.wu-btn-size-small {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 12px;
+}
+.wu-btn-radius {
+    border-radius: 100px;
+}
+
+.wu-btn-normal {
+    background-color: $btnColor-normal;
+}
+.wu-btn-warm {
+    background-color: $btnColor-warm;
+}
+.wu-btn-danger {
+    background-color: $btnColor-danger;
+}
+.wu-btn-disabled {
+    border-color: #eee !important;
+    background-color: #fbfbfb !important;
+    color: #d2d2d2 !important;
+    cursor: not-allowed !important;
+    opacity: 1;
+}
