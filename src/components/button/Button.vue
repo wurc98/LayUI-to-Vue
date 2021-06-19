@@ -1,18 +1,17 @@
 <template>
-  <wu-button></wu-button>
+    <div class="a">
+        <div class="b">111</div>
+    </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import WuButton from './components/button/Button.vue';
+
 export default defineComponent({
   name: 'App',
   components: {
-    WuButton
   }
 })
 </script>
-
-<style lang='scss'>
-@import './assets/css/mian.scss';
+<style lang="scss">
 </style>
