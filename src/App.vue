@@ -1,5 +1,5 @@
 <template>
-  <wu-button type='disabled' round='true' size='large'></wu-button>
+  <wu-button type='primary' round='true' size='large' icon="wu-icon-add">默认按钮</wu-button>
 </template>
 
 <script lang="ts">

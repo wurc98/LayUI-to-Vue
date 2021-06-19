@@ -1,5 +1,8 @@
 <template>
-  <button class="wu-btn" :class="classObj">默认按钮</button>
+  <button class="wu-btn" :class="classObj">
+    <span v-if="$slots.default"><slot></slot></span>
+    <i v-if="icon" class="iconfont" :class="icon"></i>
+  </button>
 </template>
 
 <script lang="ts">
@@ -36,19 +39,20 @@ export default defineComponent({
       },
     },
     round: Boolean,
+    icon: String,
   },
-  setup(props, { emit }) {
-    console.log(props);
+  setup(props, ctx) {
     const round = props.round;
     const classObj = computed(() => {
       let arr = ["wu-btn-" + props.type, "wu-btn-size-" + props.size];
-      round?arr.push("wu-btn-radius"):null
+      round ? arr.push("wu-btn-radius") : null;
       return arr;
     });
     return {
-      classObj,
+      classObj
     };
   },
+
 });
 </script>
 <style lang="scss">
